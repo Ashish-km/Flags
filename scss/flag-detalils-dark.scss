@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+$primary-color: #2b3743;
+$secondary-color: #212e37;
+$accent-color: #3d4d5d;
+$color-black: white;
+$light-text-color: #868686;
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $secondary-color;
+
+    .nav-bar {
+        padding: 20px 70px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $primary-color;
+        color: $color-black;
+        ;
+        font-weight: 600;
+        font-size: 20px;
+
+        .logo {
+            a {
+                color: $color-black;
+                ;
+                font-weight: 600px;
+                text-decoration: none;
+            }
+        }
+
+        a.mode-button {
+            background-color: $primary-color;
+            color: $color-black;
+            ;
+            border: 0;
+            line-height: 18px;
+            text-decoration: none;
+
+            img {
+                height: 11px;
+                width: 28px;
+
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .dark-light span {
+                display: none;
+
+            }
+        }
+    }
+
+    .back-button {
+        background-color: $secondary-color;
+        margin: 51px 0px 22px;
+
+        a {
+            background-color: $primary-color;
+            color: $color-black;
+            ;
+            border: 0px;
+            border-radius: 4px;
+            padding: 10px;
+            height: 33px;
+            width: 100px;
+            text-decoration: none;
+            margin: 50px;
+            padding: 9px 30px;
+        }
+    }
+
+    .flag-d {
+        display: flex;
+        width: 90%;
+        overflow: hidden;
+        margin-right: 70px;
+        padding: 25px;
+        gap: 60px;
+
+        .flag-img {
+            width: 450px;
+            height: 300px;
+        }
+
+        .flag-img img {
+            display: block;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 488px) {
+            .flag-img {
+                width: 350px;
+                height: 100px;
+            }
+
+            .flag-img img {
+                max-width: 60%;
+            }
+        }
+
+        .container {
+            color: $color-black;
+            ;
+
+            margin-top: 32px;
+
+            .card-d {
+                display: flex;
+                gap: 100px;
+
+                .card-1 {
+                    width: 280px;
+
+                    ul {
+                        padding: 0%;
+                    }
+
+                    li {
+                        list-style: none;
+                        margin-bottom: 15px;
+                        color: $light-text-color;
+
+                        strong {
+                            color: $color-black;
+                            ;
+                        }
+
+                    }
+                }
+
+                @media (max-width: 560px) {
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-top: 73px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                margin-top: 73px;
+            }
+
+        }
+
+        .borders-countries {
+            display: flex;
+            gap: 20px;
+            align-items: baseline;
+
+            ul {
+                padding: 0%;
+                display: flex;
+                gap: 20px;
+
+                @media screen and (max-width: 380px) {
+                    flex-wrap: wrap;
+                }
+            }
+
+            li {
+                list-style: none;
+
+                button {
+                    background-color: $primary-color;
+                    border-radius: 6px;
+                    border: 0px;
+                    color: $color-black;
+                    ;
+                    padding: 10px;
+                    width: 70px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

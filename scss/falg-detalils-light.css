@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+:root {
+  --perimary-color:#fafafa;
+  --secondary-color:#F0F0EF
+  --color-black: black;
+  --light-text-color:#868686;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+}
+body .nav-bar {
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--perimary-color);
+  color: var(---color-black);
+  font-weight: 600;
+  font-size: 20px;
+}
+body .nav-bar .logo a {
+  color: var(---color-black);
+  font-weight: 600px;
+  text-decoration: none;
+}
+body .nav-bar .mode-button {
+  background-color: var(--perimary-color);
+  color: var(---color-black);
+  border: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+body .nav-bar .mode-button img {
+  height: 11px;
+  width: 28px;
+}
+@media screen and (max-width: 768px) {
+  body .nav-bar .dark-light span {
+    display: none;
+  }
+}
+body .back-button {
+  background-color: var(--secondary-color);
+  margin: 51px 0px 22px;
+}
+body .back-button a {
+  background-color: white;
+  color: var(---color-black);
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px;
+  height: 33px;
+  width: 100px;
+  text-decoration: none;
+  margin: 50px;
+  padding: 9px 30px;
+}
+body .flag-d {
+  display: flex;
+  width: 90%;
+  overflow: hidden;
+  margin-right: 70px;
+  padding: 25px;
+  gap: 60px;
+}
+body .flag-d .flag-img {
+  width: 450px;
+  height: 300px;
+}
+body .flag-d .flag-img img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+@media (max-width: 488px) {
+  body .flag-d .flag-img {
+    width: 350px;
+    height: 100px;
+  }
+  body .flag-d .flag-img img {
+    max-width: 60%;
+  }
+}
+body .flag-d .container {
+  color: var(---color-black);
+  margin-top: 32px;
+}
+body .flag-d .container .card-d {
+  display: flex;
+  gap: 100px;
+}
+body .flag-d .container .card-d .card-1 {
+  width: 280px;
+}
+body .flag-d .container .card-d .card-1 ul {
+  padding: 0%;
+}
+body .flag-d .container .card-d .card-1 li {
+  list-style: none;
+  margin-bottom: 15px;
+  color: #868686;
+}
+body .flag-d .container .card-d .card-1 li strong {
+  color: var(---color-black);
+}
+@media (max-width: 560px) {
+  body .flag-d .container .card-d {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .flag-d .container {
+    margin-top: 73px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .flag-d .container {
+    margin-top: 73px;
+  }
+}
+body .flag-d .borders-countries {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+body .flag-d .borders-countries ul {
+  padding: 0%;
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 380px) {
+  body .flag-d .borders-countries ul {
+    flex-wrap: wrap;
+  }
+}
+body .flag-d .borders-countries li {
+  list-style: none;
+}
+body .flag-d .borders-countries li button {
+  background-color: var(--perimary-color);
+  border-radius: 6px;
+  border: 0px;
+  color: var(---color-black);
+  padding: 10px;
+  width: 70px;
+}
+@media screen and (max-width: 768px) {
+  body .flag-d .borders-countries {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .flag-d {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .flag-d {
+    flex-direction: column;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=falg-detalils-light.css.map */

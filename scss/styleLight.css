@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0EF;
+}
+body .main-container .nav-bar {
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  color: black;
+  font-weight: 600;
+}
+body .main-container .nav-bar .logo a {
+  color: black;
+  font-weight: 600px;
+  text-decoration: none;
+}
+body .main-container .nav-bar a.mode-button {
+  background-color: #fafafa;
+  color: black;
+  border: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+body .main-container .nav-bar a.mode-button img {
+  height: 11px;
+  width: 28px;
+}
+@media screen and (max-width: 768px) {
+  body .main-container .nav-bar .dark-light span {
+    display: none;
+  }
+}
+body .main-container .hero-section {
+  background-color: #F0F0EF;
+  padding: 45px 65px 45px 65px;
+}
+body .main-container .hero-section .search-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .main-container .hero-section .search-sections .search-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 397px;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+body .main-container .hero-section .search-sections .search-container img {
+  width: 25px;
+  height: 24px;
+  color: black;
+}
+body .main-container .hero-section .search-sections .search-container .search-input {
+  background-color: #fafafa;
+  border: 0;
+  border-radius: 4px;
+}
+body .main-container .hero-section .search-sections .search-container .search-input:focus {
+  outline: none;
+  color: black;
+}
+body .main-container .hero-section .search-sections .search-container .search-input::-moz-placeholder {
+  color: black;
+  font-size: 12px;
+}
+body .main-container .hero-section .search-sections .search-container .search-input::placeholder {
+  color: black;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  body .main-container .hero-section .search-sections .search-container {
+    width: 337px;
+  }
+}
+@media screen and (max-width: 395px) {
+  body .main-container .hero-section .search-sections .search-container {
+    width: 200px;
+  }
+}
+body .main-container .hero-section .search-sections .search-container-b {
+  position: relative;
+}
+body .main-container .hero-section .search-sections .search-container-b .dropdown-button {
+  background-color: #fafafa;
+  color: black;
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  border: 1px;
+  cursor: pointer;
+  height: 40px;
+  width: 181px;
+}
+body .main-container .hero-section .search-sections .search-container-b .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fafafa;
+  width: 180px;
+  z-index: 1;
+  border: 2px;
+  border-radius: 4px;
+  margin: 3px;
+}
+body .main-container .hero-section .search-sections .search-container-b .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+body .main-container .hero-section .search-sections .search-container-b .dropdown-content a:hover {
+  background-color: black;
+}
+body .main-container .hero-section .search-sections .search-container-b:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  body .main-container .hero-section .search-sections {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+body .main-container .hero-section .flag-container {
+  width: 265px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  padding: 50px 0px;
+}
+body .main-container .hero-section .flag-container .f-cards {
+  background-color: #fafafa;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+body .main-container .hero-section .flag-container .f-cards .flag-country img {
+  width: 330px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .main-container .hero-section .flag-container .f-cards .country-details {
+  color: black;
+  padding: 22px 42px 0px 18px;
+}
+body .main-container .hero-section .flag-container .f-cards .country-details h2 {
+  padding: 2px;
+  margin: 0px;
+  font-size: 16px;
+}
+body .main-container .hero-section .flag-container .f-cards .country-details .description {
+  list-style: none;
+  padding: 0px;
+  font-size: 12px;
+}
+body .main-container .hero-section .flag-container .f-cards .country-details .description li {
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 1200px) {
+  body .main-container .hero-section .flag-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  body .main-container .hero-section .flag-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  body .main-container .hero-section .flag-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .main-container .hero-section {
+    max-width: 0px;
+    padding: 15px 29px 15px 29px;
+  }
+}/*# sourceMappingURL=styleLight.css.map */
